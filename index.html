@@ -3,122 +3,381 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Axolotl Token (AXO)</title>
+
+<title>Axolotl Token (AXO) | Polygon</title>
+
+<meta name="description" content="Official website of Axolotl Token (AXO), an ERC-20 token deployed on the Polygon network.">
 
 <style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#07050b;
-color:white;
-text-align:center;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-header{
-padding:18px;
-border-bottom:1px solid #39244a;
+html {
+    scroll-behavior: smooth;
 }
 
-header img{
-width:42px;
-height:42px;
-border-radius:50%;
-vertical-align:middle;
-margin-right:10px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 50% 10%, #27113e 0%, #0b0711 35%, #050507 70%);
+    color: white;
+    line-height: 1.6;
 }
 
-.hero{
-padding:55px 20px;
+a {
+    color: inherit;
 }
 
-.hero img{
-width:320px;
-max-width:85%;
-border-radius:50%;
-box-shadow:0 0 45px #8e3bd1;
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(7, 5, 10, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #39244d;
 }
 
-h1{
-font-size:70px;
-margin:20px 0 0;
-color:#d88cff;
+.nav {
+    max-width: 1150px;
+    margin: auto;
+    padding: 16px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h2{
-margin:5px 0 15px;
+.brand {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
-p{
-color:#c5bdcc;
-max-width:760px;
-margin:12px auto;
-line-height:1.6;
+.brand span {
+    color: #c77dff;
 }
 
-.btn{
-display:inline-block;
-margin:10px 6px;
-padding:14px 22px;
-border-radius:10px;
-background:#9d46d7;
-color:white;
-text-decoration:none;
-font-weight:bold;
+nav a {
+    text-decoration: none;
+    margin-left: 22px;
+    color: #d8cfe0;
+    font-size: 14px;
 }
 
-section{
-max-width:950px;
-margin:auto;
-padding:45px 20px;
+nav a:hover {
+    color: #d99cff;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:15px;
+/* HERO */
+
+.hero {
+    min-height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
 }
 
-.card{
-background:#120c18;
-border:1px solid #39244a;
-border-radius:14px;
-padding:20px;
+.hero-inner {
+    max-width: 900px;
 }
 
-.contract{
-word-break:break-all;
-color:#d88cff;
+.logo {
+    width: min(360px, 82vw);
+    height: auto;
+    border-radius: 50%;
+    filter:
+        drop-shadow(0 0 18px #a855f7)
+        drop-shadow(0 0 45px rgba(168,85,247,.55));
+    margin-bottom: 25px;
 }
 
-a{
-color:#d88cff;
+.hero h1 {
+    font-size: clamp(55px, 9vw, 95px);
+    line-height: 1;
+    letter-spacing: 5px;
+    text-shadow: 0 0 30px #a855f7;
 }
 
-footer{
-padding:30px;
-border-top:1px solid #39244a;
-color:#8d8495;
+.hero h2 {
+    font-size: 27px;
+    margin-top: 15px;
 }
 
-@media(max-width:650px){
-.cards{grid-template-columns:1fr;}
-h1{font-size:55px;}
+.hero p {
+    max-width: 760px;
+    margin: 20px auto;
+    color: #cfc6d7;
+    font-size: 17px;
 }
+
+.buttons {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg,#8b5cf6,#d278ff);
+    box-shadow: 0 0 25px rgba(168,85,247,.45);
+}
+
+.btn-secondary {
+    border: 1px solid #a855f7;
+    background: rgba(168,85,247,.08);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(200,120,255,.65);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 90px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 45px;
+    color: #aaa0b3;
+}
+
+.card {
+    background:
+        linear-gradient(145deg,
+        rgba(35,21,49,.82),
+        rgba(12,8,17,.92));
+    border: 1px solid #49305c;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 15px 60px rgba(0,0,0,.3);
+}
+
+/* ABOUT */
+
+.about-card {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #d4cbdc;
+}
+
+/* TOKEN INFO */
+
+.token-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.token-box {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.token-box small {
+    color: #998ba5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.token-box strong {
+    font-size: 20px;
+    color: #e6c6ff;
+}
+
+/* HOW TO BUY */
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    background: #9b5de5;
+    box-shadow: 0 0 20px rgba(168,85,247,.55);
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #aaa0b3;
+}
+
+/* CONTRACT */
+
+.contract {
+    text-align: center;
+}
+
+.address {
+    margin: 25px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #6d4388;
+    background: #08060b;
+    border-radius: 14px;
+    word-break: break-all;
+    font-family: monospace;
+    color: #e1b6ff;
+}
+
+/* ROADMAP */
+
+.roadmap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.roadmap h3 {
+    color: #d79cff;
+    margin-bottom: 12px;
+}
+
+.roadmap p {
+    color: #aaa0b3;
+}
+
+/* CONTACT */
+
+.contact {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact a {
+    color: #dda8ff;
+    font-size: 19px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 45px 20px;
+    text-align: center;
+    color: #8f8497;
+    border-top: 1px solid #2c2035;
+}
+
+/* MOBILE */
+
+@media(max-width:850px) {
+
+    nav {
+        display:none;
+    }
+
+    .token-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .steps,
+    .roadmap {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .token-grid {
+        grid-template-columns:1fr;
+    }
+
+    section {
+        padding:65px 18px;
+    }
+
+    .section-title {
+        font-size:31px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<img src="axo-token.png.jpeg" alt="AXO Logo">
-<strong>AXO | Axolotl Token</strong>
+<div class="nav">
+
+<div class="brand">
+AXO<span>.</span>
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#token">Token</a>
+<a href="#buy">How to Buy</a>
+<a href="#contract">Contract</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
 </header>
 
-<div class="hero">
 
-<img src="axo-token.png.jpeg" alt="Axolotl Token Logo">
+<section class="hero">
+
+<div class="hero-inner">
+
+<img
+src="axo-token.png.jpeg"
+alt="Axolotl Token AXO Logo"
+class="logo">
 
 <h1>AXO</h1>
+
 <h2>Axolotl Token</h2>
 
 <p>
@@ -127,98 +386,268 @@ AXO features an axolotl-themed identity with transparent and publicly
 verifiable blockchain activity.
 </p>
 
-<a class="btn"
+<div class="buttons">
+
+<a class="btn btn-primary"
 href="https://app.uniswap.org/swap?chain=polygon&inputCurrency=NATIVE&outputCurrency=0x09446a86fc46624177dd619e258f2ed743a231b1"
-target="_blank">Trade AXO</a>
+target="_blank">
+Trade AXO
+</a>
 
-<a class="btn"
+<a class="btn btn-secondary"
 href="https://polygonscan.com/token/0x09446a86fC46624177Dd619e258F2ED743A231B1"
-target="_blank">PolygonScan</a>
+target="_blank">
+View Contract
+</a>
 
 </div>
 
-<section>
-
-<h2>Token Information</h2>
-
-<div class="cards">
-
-<div class="card">
-<strong>Name</strong>
-<p>Axolotl Token</p>
 </div>
-
-<div class="card">
-<strong>Symbol</strong>
-<p>AXO</p>
-</div>
-
-<div class="card">
-<strong>Network</strong>
-<p>Polygon</p>
-</div>
-
-<div class="card">
-<strong>Maximum Supply</strong>
-<p>25,000,000,000 AXO</p>
-</div>
-
-<div class="card">
-<strong>Decimals</strong>
-<p>11</p>
-</div>
-
-<div class="card">
-<strong>Standard</strong>
-<p>ERC-20</p>
-</div>
-
-</div>
-
 </section>
 
-<section>
 
-<h2>Official Contract</h2>
+<section id="about">
 
-<div class="card">
-<p class="contract">
+<div class="container">
+
+<h2 class="section-title">About AXO</h2>
+
+<p class="section-subtitle">
+A token built on the Polygon network.
+</p>
+
+<div class="card about-card">
+
+Axolotl Token combines a distinctive axolotl-inspired identity
+with Polygon blockchain infrastructure.
+
+AXO transactions and token activity can be independently verified
+on-chain through the Polygon network.
+
+</div>
+
+</div>
+</section>
+
+
+<section id="token">
+
+<div class="container">
+
+<h2 class="section-title">Token Information</h2>
+
+<p class="section-subtitle">
+Core information about Axolotl Token.
+</p>
+
+<div class="token-grid">
+
+<div class="card token-box">
+<small>Token</small>
+<strong>Axolotl Token</strong>
+</div>
+
+<div class="card token-box">
+<small>Symbol</small>
+<strong>AXO</strong>
+</div>
+
+<div class="card token-box">
+<small>Network</small>
+<strong>Polygon</strong>
+</div>
+
+<div class="card token-box">
+<small>Maximum Supply</small>
+<strong>25 Billion AXO</strong>
+</div>
+
+<div class="card token-box">
+<small>Decimals</small>
+<strong>11</strong>
+</div>
+
+<div class="card token-box">
+<small>Standard</small>
+<strong>ERC-20</strong>
+</div>
+
+<div class="card token-box">
+<small>Blockchain</small>
+<strong>Polygon PoS</strong>
+</div>
+
+<div class="card token-box">
+<small>Trading</small>
+<strong>Uniswap</strong>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="buy">
+
+<div class="container">
+
+<h2 class="section-title">How to Buy AXO</h2>
+
+<p class="section-subtitle">
+Always verify the official AXO contract address before interacting with the token.
+</p>
+
+<div class="steps">
+
+<div class="card step">
+<div class="step-number">1</div>
+<h3>Use Polygon</h3>
+<p>
+Use a compatible cryptocurrency wallet and select the Polygon network.
+</p>
+</div>
+
+<div class="card step">
+<div class="step-number">2</div>
+<h3>Open Uniswap</h3>
+<p>
+Use the official AXO trading link and verify the token contract before continuing.
+</p>
+</div>
+
+<div class="card step">
+<div class="step-number">3</div>
+<h3>Swap for AXO</h3>
+<p>
+Choose the amount you want to swap and review all transaction details before confirming.
+</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:35px;">
+
+<a class="btn btn-primary"
+href="https://app.uniswap.org/swap?chain=polygon&inputCurrency=NATIVE&outputCurrency=0x09446a86fc46624177dd619e258f2ed743a231b1"
+target="_blank">
+Open AXO on Uniswap
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contract">
+
+<div class="container contract">
+
+<h2 class="section-title">Official Contract</h2>
+
+<p class="section-subtitle">
+Verify this address before interacting with AXO.
+</p>
+
+<div class="address">
 0x09446a86fC46624177Dd619e258F2ED743A231B1
+</div>
+
+<a class="btn btn-secondary"
+href="https://polygonscan.com/token/0x09446a86fC46624177Dd619e258F2ED743A231B1"
+target="_blank">
+View on PolygonScan
+</a>
+
+</div>
+</section>
+
+
+<section id="roadmap">
+
+<div class="container">
+
+<h2 class="section-title">AXO Roadmap</h2>
+
+<p class="section-subtitle">
+The initial development roadmap for the Axolotl Token project.
 </p>
 
+<div class="roadmap">
+
+<div class="card">
+<h3>Phase 01 — Foundation</h3>
 <p>
-Always verify the official contract address before interacting with AXO.
+AXO token deployment, contract verification and establishment of the official project website.
 </p>
 </div>
 
-</section>
-
-<section>
-
-<h2>Contact</h2>
+<div class="card">
+<h3>Phase 02 — Visibility</h3>
+<p>
+Project information development, token profile updates and expansion of AXO's public presence.
+</p>
+</div>
 
 <div class="card">
+<h3>Phase 03 — Ecosystem</h3>
 <p>
-Official project email:
+Explore additional community features, integrations and future utility opportunities for the AXO ecosystem.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<p class="section-subtitle">
+Official Axolotl Token project contact.
+</p>
+
+<div class="card contact">
+
+<p>
+For project-related inquiries:
+</p>
+
+<br>
+
 <a href="mailto:izzet.60cetin@gmail.com">
 izzet.60cetin@gmail.com
 </a>
-</p>
 
-<p>
-GitHub:
-<a href="https://github.com/izzetcemcetin/axolotl-token" target="_blank">
-Axolotl Token Repository
-</a>
-</p>
 </div>
 
+</div>
 </section>
 
+
 <footer>
-© 2026 Axolotl Token (AXO) · Built on Polygon
+
+<strong>Axolotl Token (AXO)</strong>
+
+<br><br>
+
+Built on Polygon
+
 <br>
-Cryptocurrency involves risk. This website does not provide financial advice.
+
+© 2026 Axolotl Token
+
+<br><br>
+
+Cryptocurrency involves risk.
+This website does not provide financial advice.
+
 </footer>
 
 </body>
