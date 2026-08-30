@@ -3,134 +3,223 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Axolotl Token (AXO) | Polygon</title>
-
-<meta name="description" content="Official website of Axolotl Token (AXO), an ERC-20 token deployed on the Polygon network.">
+<title>Axolotl Token (AXO)</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#07050b;
+color:white;
+text-align:center;
 }
 
-html {
-  scroll-behavior: smooth;
+header{
+padding:18px;
+border-bottom:1px solid #39244a;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background:
-    radial-gradient(circle at top, rgba(173, 74, 255, 0.14), transparent 32%),
-    #07050b;
-  color: #ffffff;
-  line-height: 1.6;
+header img{
+width:42px;
+height:42px;
+border-radius:50%;
+vertical-align:middle;
+margin-right:10px;
 }
 
-a {
-  color: inherit;
+.hero{
+padding:55px 20px;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  backdrop-filter: blur(14px);
-  background: rgba(7, 5, 11, 0.86);
-  border-bottom: 1px solid rgba(203, 114, 255, 0.18);
+.hero img{
+width:320px;
+max-width:85%;
+border-radius:50%;
+box-shadow:0 0 45px #8e3bd1;
 }
 
-.nav {
-  max-width: 1150px;
-  margin: auto;
-  padding: 16px 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+h1{
+font-size:70px;
+margin:20px 0 0;
+color:#d88cff;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  font-weight: 800;
+h2{
+margin:5px 0 15px;
 }
 
-.brand img {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid #b64cff;
-  box-shadow: 0 0 18px rgba(182, 76, 255, 0.45);
+p{
+color:#c5bdcc;
+max-width:760px;
+margin:12px auto;
+line-height:1.6;
 }
 
-.brand span {
-  color: #dfb0ff;
+.btn{
+display:inline-block;
+margin:10px 6px;
+padding:14px 22px;
+border-radius:10px;
+background:#9d46d7;
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-nav a {
-  text-decoration: none;
-  color: #d5cfdb;
-  margin-left: 18px;
-  font-size: 14px;
+section{
+max-width:950px;
+margin:auto;
+padding:45px 20px;
 }
 
-nav a:hover {
-  color: #ffffff;
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
 }
 
-.hero {
-  max-width: 1150px;
-  margin: auto;
-  min-height: 82vh;
-  padding: 70px 22px;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
-  gap: 55px;
+.card{
+background:#120c18;
+border:1px solid #39244a;
+border-radius:14px;
+padding:20px;
 }
 
-.hero-text .badge {
-  display: inline-block;
-  padding: 7px 12px;
-  border: 1px solid rgba(192, 101, 255, 0.45);
-  border-radius: 999px;
-  color: #dfa7ff;
-  background: rgba(174, 79, 255, 0.08);
-  margin-bottom: 18px;
-  font-size: 13px;
+.contract{
+word-break:break-all;
+color:#d88cff;
 }
 
-.hero h1 {
-  font-size: clamp(55px, 8vw, 100px);
-  line-height: 0.95;
-  margin-bottom: 10px;
-  background: linear-gradient(180deg, #ffffff, #cf8cff 70%);
-  -webkit-background-clip: text;
-  color: transparent;
+a{
+color:#d88cff;
 }
 
-.hero h2 {
-  font-size: 30px;
-  margin-bottom: 18px;
+footer{
+padding:30px;
+border-top:1px solid #39244a;
+color:#8d8495;
 }
 
-.hero p {
-  color: #bdb5c5;
-  max-width: 650px;
-  font-size: 17px;
+@media(max-width:650px){
+.cards{grid-template-columns:1fr;}
+h1{font-size:55px;}
 }
+</style>
+</head>
 
-.actions {
-  margin-top: 28px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
+<body>
 
-.btn {
-  display: inline-block;
-  padding: 14px 22px
+<header>
+<img src="axo-token.png.jpeg" alt="AXO Logo">
+<strong>AXO | Axolotl Token</strong>
+</header>
+
+<div class="hero">
+
+<img src="axo-token.png.jpeg" alt="Axolotl Token Logo">
+
+<h1>AXO</h1>
+<h2>Axolotl Token</h2>
+
+<p>
+Axolotl Token (AXO) is an ERC-20 token deployed on the Polygon network.
+AXO features an axolotl-themed identity with transparent and publicly
+verifiable blockchain activity.
+</p>
+
+<a class="btn"
+href="https://app.uniswap.org/swap?chain=polygon&inputCurrency=NATIVE&outputCurrency=0x09446a86fc46624177dd619e258f2ed743a231b1"
+target="_blank">Trade AXO</a>
+
+<a class="btn"
+href="https://polygonscan.com/token/0x09446a86fC46624177Dd619e258F2ED743A231B1"
+target="_blank">PolygonScan</a>
+
+</div>
+
+<section>
+
+<h2>Token Information</h2>
+
+<div class="cards">
+
+<div class="card">
+<strong>Name</strong>
+<p>Axolotl Token</p>
+</div>
+
+<div class="card">
+<strong>Symbol</strong>
+<p>AXO</p>
+</div>
+
+<div class="card">
+<strong>Network</strong>
+<p>Polygon</p>
+</div>
+
+<div class="card">
+<strong>Maximum Supply</strong>
+<p>25,000,000,000 AXO</p>
+</div>
+
+<div class="card">
+<strong>Decimals</strong>
+<p>11</p>
+</div>
+
+<div class="card">
+<strong>Standard</strong>
+<p>ERC-20</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Official Contract</h2>
+
+<div class="card">
+<p class="contract">
+0x09446a86fC46624177Dd619e258F2ED743A231B1
+</p>
+
+<p>
+Always verify the official contract address before interacting with AXO.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<div class="card">
+<p>
+Official project email:
+<a href="mailto:izzet.60cetin@gmail.com">
+izzet.60cetin@gmail.com
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/izzetcemcetin/axolotl-token" target="_blank">
+Axolotl Token Repository
+</a>
+</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Axolotl Token (AXO) · Built on Polygon
+<br>
+Cryptocurrency involves risk. This website does not provide financial advice.
+</footer>
+
+</body>
+</html>
